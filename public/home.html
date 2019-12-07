@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Project2 Budget Zoom</title>
+<head>
+<link rel="stylesheet" type="text/css" href="P2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Budget, Zoom">
+</head>
+
+<body>
+
+<div class="topnav">
+   <a href="Project2.html"id="top">Homepage</a>
+</div>
+
+ <br>
+    <h1 class = "first">Budget Zoom</h1>
+    <p class = "a">Sort your finances<i> fast.</i></p>
+    <p class="b">Use this tool to become the master of your budget. This tool offers preset categories that allow the you to start your budget right away! Press the button to Start Below!</p>
+
+
+<button type="button" onclick="loadDoc()">Start Now!</button>
+
+<p id="demo"></p>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "test.html", true);
+  xhttp.send();
+}
+</script>
+
+
+
+
+<!-- Footer -->
+<footer class = "footer">
+  <p class = "a"><a href="#top">Return to Top</a></p>
+</footer>
+
+</body>
+</html>
