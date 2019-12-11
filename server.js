@@ -36,10 +36,11 @@ app.get("/test.html", function(req, res) {
    // res.render("home", params);
 });
 
-app.listen(5000, function() {
-   console.log("The server is up and listening on port 5000");
+const port = process.env.PORT || 5000;
+// listen for port
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}/`);
 });
-
 // Model
 
 // function getCurrentLoggedInUserAccount() {
