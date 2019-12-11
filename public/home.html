@@ -10,7 +10,7 @@
 <body>
 
 <div class="topnav">
-   <a href="Project2.html"id="top">Homepage</a>
+   <a href="home.html"id="top">Homepage</a>
 </div>
 
  <br>
@@ -19,7 +19,7 @@
     <p class="b">Use this tool to become the master of your budget. This tool offers preset categories that allow the you to start your budget right away! Press the button to Start Below!</p>
 
 
-<button type="button" onclick="loadDoc()">Start Now!</button>
+<button class="button" type="button" onclick="loadDoc()">Start Now!</button>
 
 <p id="demo"></p>
 
@@ -37,8 +37,35 @@ function loadDoc() {
 }
 </script>
 
+<script>
 
+    function calculate() {
+       var E1=document.getElementById('Tithing').value;
+       var E2=document.getElementById('Mortgage').value;
+       var E3=document.getElementById('Utilities').value;
+       var E4=document.getElementById('Trash').value;
+       var E5=document.getElementById('Phone').value;
+       var E6=document.getElementById('Internet').value;
+       var E7=document.getElementById('Car').value;
+       var E8=document.getElementById('Gas').value;
+       var E9=document.getElementById('Maintenance').value;
+       var E10=document.getElementById('Food').value;
+       var E11=document.getElementById('Clothing').value;
+       var E12=document.getElementById('Credit').value;
+       var E13=document.getElementById('Misc').value;
+       var I1=document.getElementById('Income').value;
 
+       var Etotal=parseFloat(E1)+parseFloat(E2)+parseFloat(E3)+parseFloat(E4)+parseFloat(E5)+parseFloat(E6)+parseFloat(E7)+parseFloat(E8)+parseFloat(E9)+parseFloat(E10)+parseFloat(E11)+parseFloat(E12)+parseFloat(E13);
+       var balance=parseFloat(I1)-parseFloat(Etotal);
+
+       if (!isNaN(balance)) {
+          document.getElementById("Balance").innerHTML="Your Balance is: "+balance;
+       }
+
+    }
+
+ </script>
+ <button class="button" onclick="calculate()"> Calculate </button>
 
 <!-- Footer -->
 <footer class = "footer">
