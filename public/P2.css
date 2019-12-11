@@ -14,6 +14,14 @@ p.b {
    text-align: center;
 }
 
+p.c {
+   color:black;
+   font-size: calc(12px + 1vw);;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 35px 80px;
+   text-align: center;
+}
+
 h1.first {
   display: block;
   font-size: calc(16px + 2.5vw);;
@@ -21,6 +29,14 @@ h1.first {
   color:DarkMagenta;
   text-align: center;
 }
+
+.button{
+  background-color: DarkMagenta;
+  color: white;
+  font-size: 16px;
+  align-self: center;
+}
+
 
 img.all {
    display:block;
