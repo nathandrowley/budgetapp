@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "engins":{
-  "node": "10.x"
+    "node": "10.x"
   },
   "bugs": {
     "url": "https://github.com/nathandrowley/budgetnode/issues"
